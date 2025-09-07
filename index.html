@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ปุ่มลิงก์พร้อมพื้นหลัง</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #fff;
+            background-image: url(images/bg.png);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            backdrop-filter: unset;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: block;
+            width: 250px;
+            padding: 15px 0;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 0.2);
+            border-color: #ffeb3b;
+        }
+
+        .button:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+
+<body>
+  <div class="button-container">
+        <a href="https://www.google.com" class="button blue" target="_blank">ซื้อของอัพ</a>
+        <a href="https://www.youtube.com" class="button green" target="_blank">วนเหรียญ</a>
+        <a href="https://www.facebook.com" class="button red" target="_blank">ซื้อวัตถดิบ</a>
+        <a href="https://www.wikipedia.org" class="button yellow" target="_blank">ซื้อขนม</a>
+        <a href="https://www.github.com" class="button purple" target="_blank">กดบัตรกำนัล</a>
+    </div>
+
+</body>
+</html>
